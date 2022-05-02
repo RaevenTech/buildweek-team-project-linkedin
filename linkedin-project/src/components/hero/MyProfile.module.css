@@ -1,0 +1,20 @@
+
+
+.hero{
+    margin-top: 25px;
+    border-radius: 10px;
+    margin-left: -5px;
+}
+.profilePic {
+    margin-top: 10px;
+    border-radius: 50%;
+}
+.profileName{
+margin-top: 20px;
+}
+.jobTitle {
+    margin-top: 0px;
+}
+#root > div > div > div.Layout_hero__K9zZR.col-md-9{
+    padding-left: 5px;
+}

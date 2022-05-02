@@ -1,0 +1,12 @@
+.main{
+    border: solid blue;
+}
+.hero{
+    border: solid red;
+}
+.sidebar{
+    border-radius: solid green;
+}
+.openBtn {
+    border-radius: 20px;
+}
