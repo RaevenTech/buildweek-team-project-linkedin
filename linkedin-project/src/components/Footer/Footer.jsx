@@ -21,7 +21,8 @@ function Footer() {
       </figure>
       <Container>
           <Row md={12}>
-    <Col md={4}>  <ul className={classes.list}>
+    <Col md={2}>  
+    <div><ul className={classes.list}>
               <li className={classes.listItem}>
                   <a className={classes.links} target="_blank" href="https://about.linkedin.com">
                     About
@@ -108,6 +109,7 @@ function Footer() {
                   </a>
               </li>
           </ul>
+          </div>
         </Col>
     <Col md={4}>
             <ul className={classes.secondUl}>
@@ -229,7 +231,7 @@ function Footer() {
             </div>
       </Row></Container>
       <div>
-      <p className="t-12 t-black--light t-normal text-align-left clear-both">
+      <p>
         LinkedIn Corporation © 2022
       </p>
     </div>
