@@ -6,7 +6,8 @@ import classes from "./Footer.module.css";
 function Footer() {
     return (
 <footer className={classes.footer}>
-      <figure className="display-flex">
+      <figure>
+          {/* -------------logo------------ */}
         <li-icon type="linkedin-logo" size="21dp" color="brand" role="img" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 21" data-supported-dps="84x21" fill="currentColor" className="mercado-match" width="84" height="21" focusable="false">
   <g>
     <g className="background-mercado">
@@ -16,37 +17,39 @@ function Footer() {
   </g>
 </svg></li-icon>
       </figure>
+      {/* ------------logo ends----------------- */}
       <Container>
           <Row md={12}>
+              {/* -----------Col with the text links---------------- */}
     <Col md={2}>  
     <div><ul className={classes.list}>
               <li className={classes.listItem}>
-                  <a className={classes.links} target="_blank" href="https://about.linkedin.com">
+                  <a className={classes.links}  href="https://about.linkedin.com">
                     About
                   </a>
               </li>
               <li className={classes.listItem}>
-                  <a className={classes.links} target="_blank" href="https://www.linkedin.com/accessibility">
+                  <a className={classes.links}  href="https://www.linkedin.com/accessibility">
                     Accessibility
                   </a>
               </li>
               <li className={classes.listItem}>
-                  <a className={classes.links} target="_blank" href="https://business.linkedin.com/talent-solutions?trk=flagship_nav&amp;veh=li-footer-lts-control&amp;src=li-footer">
+                  <a className={classes.links}  href="https://business.linkedin.com/talent-solutions?trk=flagship_nav&amp;veh=li-footer-lts-control&amp;src=li-footer">
                     Talent Solutions
                   </a>
               </li>
               <li className={classes.listItem}>
-                  <a className={classes.links} target="_blank" href="https://www.linkedin.com/legal/professional-community-policies">
+                  <a className={classes.links}  href="https://www.linkedin.com/legal/professional-community-policies">
                     Community Guidelines
                   </a>
               </li>
               <li className={classes.listItem}>
-                  <a className={classes.links} target="_blank" href="https://careers.linkedin.com/">
+                  <a className={classes.links}  href="https://careers.linkedin.com/">
                     Careers
                   </a>
               </li>
               <li className={classes.listItem}>
-                  <a className={classes.links} target="_blank" href="https://business.linkedin.com/marketing-solutions?trk=n_nav_lms_f&amp;src=li-footer">
+                  <a className={classes.links}  href="https://business.linkedin.com/marketing-solutions?trk=n_nav_lms_f&amp;src=li-footer">
                     Marketing Solutions
                   </a>
               </li>
@@ -76,47 +79,50 @@ function Footer() {
 </div>
               </li>
               <li className={classes.listItem}>
-                  <a className={classes.links} target="_blank" href="https://www.linkedin.com/help/linkedin/answer/62931">
+                  <a className={classes.links}  href="https://www.linkedin.com/help/linkedin/answer/62931">
                     Ad Choices
                   </a>
               </li>
               <li className={classes.listItem}>
-                  <a className={classes.links} target="_blank" href="https://www.linkedin.com/ad/start?trk=n_nav_ads_f">
+                  <a className={classes.links}  href="https://www.linkedin.com/ad/start?trk=n_nav_ads_f">
                     Advertising
                   </a>
               </li>
               <li className={classes.listItem}>
-                  <a className={classes.links} target="_blank" href="https://business.linkedin.com/sales-solutions?trk=flagship_nav&amp;veh=li-footer-lss-control&amp;src=li-footer">
+                  <a className={classes.links}  href="https://business.linkedin.com/sales-solutions?trk=flagship_nav&amp;veh=li-footer-lss-control&amp;src=li-footer">
                     Sales Solutions
                   </a>
               </li>
               <li className={classes.listItem}>
-                  <a className={classes.links} target="_blank" href="https://mobile.linkedin.com/">
+                  <a className={classes.links}  href="https://mobile.linkedin.com/">
                     Mobile
                   </a>
               </li>
               <li className={classes.listItem}>
-                  <a className={classes.links} target="_blank" href="https://smallbusiness.linkedin.com?&amp;src=li-footer">
+                  <a className={classes.links}  href="https://smallbusiness.linkedin.com?&amp;src=li-footer">
                     Small Business
                   </a>
               </li>
               <li className={classes.listItem}>
-                  <a className={classes.links} target="_blank" href="https://safety.linkedin.com">
+                  <a className={classes.links}  href="https://safety.linkedin.com">
                     Safety Center
                   </a>
               </li>
           </ul>
           </div>
         </Col>
+         {/* -----------Col with the text links ends here---------------- */}
+
+         {/* ---------------Second Col with "questions" and "manage accout and privacy"------------------- */}
     <Col md={4}>
             <ul className={classes.secondUl}>
-                <li className="display-flex list-style-none mb4">
+                <li>
                   <li-icon aria-hidden="true" type="question-pebble-icon" active="true" className="global-footer__action-icon" color="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" className="mercado-match" width="24" height="24" focusable="false">
   <path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 16.25A1.25 1.25 0 1113.25 17 1.25 1.25 0 0112 18.25zm1.41-5.46L13 13v1h-2v-2.21l1.49-.79C13.82 10.34 14 9.77 14 9.3c0-.78-.92-1.3-2.3-1.3A7.12 7.12 0 008 9.24V7a8 8 0 013.7-1c3 0 4.3 1.55 4.3 3.3a3.91 3.91 0 01-2.59 3.49z"></path>
 </svg></li-icon>
 
                   <span>
-                      <a className={classes.links} target="_blank" href="https://www.linkedin.com/help/linkedin?trk=d_flagship3_profile_view_base">
+                      <a className={classes.links}  href="https://www.linkedin.com/help/linkedin?trk=d_flagship3_profile_view_base">
                         Questions?
                       </a>
 
@@ -131,7 +137,7 @@ function Footer() {
 </svg></li-icon>
 
                   <span>
-                      <a className={classes.links} target="_blank" href="https://www.linkedin.com/psettings/">
+                      <a className={classes.links}  href="https://www.linkedin.com/psettings/">
                         Manage your account and privacy
                       </a>
 
@@ -142,6 +148,10 @@ function Footer() {
                 </li>
            </ul>
 </Col>
+
+         {/* ---------------Second Col with "questions" and "manage accout and privacy" ends here------------------- */}
+
+         {/* -----------language drop box here------------------- */}
     <div className="grid__col
                 grid__col--12">
               <label for="language">
@@ -226,6 +236,7 @@ function Footer() {
     </option>
 </select>
             </div>
+              {/* -----------language drop box ends here------------------- */}
       </Row></Container>
       <div>
       <p>
