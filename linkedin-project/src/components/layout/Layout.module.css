@@ -1,9 +1,9 @@
 .main{
-    border: solid rgb(154, 154, 154);
+    border: solid rgba(154, 154, 154, 0);
 }
 .hero{
-    border: solid rgb(86, 86, 86);
+    border: solid rgba(86, 86, 86, 0);
 }
 .sidebar{
-    border-radius: solid rgb(120, 19, 19);
+    border-radius: solid rgba(158, 158, 158, 0);
 }
