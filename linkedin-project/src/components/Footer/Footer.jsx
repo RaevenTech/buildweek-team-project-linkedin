@@ -6,9 +6,6 @@ import classes from "./Footer.module.css";
 function Footer() {
     return (
 <footer className={classes.footer}>
-  <div  className="ember-view">  
-    <div id="expanded-footer">
-
       <figure className="display-flex">
         <li-icon type="linkedin-logo" size="21dp" color="brand" role="img" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 21" data-supported-dps="84x21" fill="currentColor" className="mercado-match" width="84" height="21" focusable="false">
   <g>
@@ -236,8 +233,8 @@ function Footer() {
       </p>
     </div>
   
-</div>
-</div>
+
+
 </footer>
     )
 }
