@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, Dropdown } from "react-bootstrap";
+import { Col, Row, Dropdown, Container } from "react-bootstrap";
 import classes from "./Footer.module.css";
 
 
@@ -19,11 +19,9 @@ function Footer() {
   </g>
 </svg></li-icon>
       </figure>
-<Row md={12}>
-      <div>
-        <nav className="">
-            <Col md={6}>
-          <ul className={classes.list}>
+      <Container>
+          <Row md={12}>
+    <Col md={4}>  <ul className={classes.list}>
               <li className={classes.listItem}>
                   <a className={classes.links} target="_blank" href="https://about.linkedin.com">
                     About
@@ -110,13 +108,9 @@ function Footer() {
                   </a>
               </li>
           </ul>
-          </Col>
-        </nav>
-
-        <Col md={12}>
-          <div className="grid">
-            <ul className= "">
-                <Col md={12}>
+        </Col>
+    <Col md={4}>
+            <ul className={classes.secondUl}>
                 <li className="display-flex list-style-none mb4">
                   <li-icon aria-hidden="true" type="question-pebble-icon" active="true" className="global-footer__action-icon" color="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" className="mercado-match" width="24" height="24" focusable="false">
   <path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 16.25A1.25 1.25 0 1113.25 17 1.25 1.25 0 0112 18.25zm1.41-5.46L13 13v1h-2v-2.21l1.49-.79C13.82 10.34 14 9.77 14 9.3c0-.78-.92-1.3-2.3-1.3A7.12 7.12 0 008 9.24V7a8 8 0 013.7-1c3 0 4.3 1.55 4.3 3.3a3.91 3.91 0 01-2.59 3.49z"></path>
@@ -147,10 +141,9 @@ function Footer() {
                     </p>
                   </span>
                 </li>
-           </Col>
            </ul>
-
-            <div className="grid__col
+</Col>
+    <div className="grid__col
                 grid__col--12">
               <label for="language">
                 Select Language
@@ -234,17 +227,15 @@ function Footer() {
     </option>
 </select>
             </div>
-          </div>
-        </Col>
-      </div>
-      </Row>
+      </Row></Container>
+      <div>
       <p className="t-12 t-black--light t-normal text-align-left clear-both">
         LinkedIn Corporation © 2022
       </p>
     </div>
   
 </div>
-
+</div>
 </footer>
     )
 }
