@@ -1,0 +1,12 @@
+.ElementDivs {
+    display: flex;
+    justify-content: space-between;  
+    padding: 10px;
+}
+.line {
+    padding: 0;
+    margin: 0;
+}
+.CardUno {
+    border-radius: 12px;
+}
