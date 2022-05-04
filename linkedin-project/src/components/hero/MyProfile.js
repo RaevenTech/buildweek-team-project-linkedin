@@ -16,7 +16,7 @@ export default function MyProfile() {
         <div>
             <Jumbotron className={classes.hero}>
                 <div>
-                    <Link to="/edit-info" onclick={handleShow}>
+                    <Link to="/edit-info" onClick={handleShow}>
                         <MdModeEditOutline />
                     </Link>
                 </div>
