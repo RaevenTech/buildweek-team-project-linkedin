@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import classes from "./ProfileButtons.module.css";
 
-export default function ProfileButtons() {
+export default function ProfileButtons(props) {
     return (
         <>
             <Button className={classes.button1} variant="primary" size="md">
