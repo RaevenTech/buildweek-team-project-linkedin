@@ -21,7 +21,7 @@ function Footer() {
       <Container>
           <Row md={12}>
               {/* -----------Col with the text links---------------- */}
-    <Col md={2}>  
+    <div>  
     <div><ul className={classes.list}>
               <li className={classes.listItem}>
                   <a className={classes.links}  href="https://about.linkedin.com">
@@ -110,11 +110,11 @@ function Footer() {
               </li>
           </ul>
           </div>
-        </Col>
+        </div>
          {/* -----------Col with the text links ends here---------------- */}
 
          {/* ---------------Second Col with "questions" and "manage accout and privacy"------------------- */}
-    <Col md={4}>
+    <div>
             <ul className={classes.secondUl}>
                 <li>
                   <li-icon aria-hidden="true" type="question-pebble-icon" active="true" className="global-footer__action-icon" color="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" className="mercado-match" width="24" height="24" focusable="false">
@@ -147,18 +147,17 @@ function Footer() {
                   </span>
                 </li>
            </ul>
-</Col>
+</div>
 
          {/* ---------------Second Col with "questions" and "manage accout and privacy" ends here------------------- */}
 
          {/* -----------language drop box here------------------- */}
-    <div className="grid__col
-                grid__col--12">
+    <div className={classes.ThirdCol}>
               <label for="language">
                 Select Language
               </label>
 
-              <select id="language">
+              <select className={classes.LanguageSelect} id="language">
     <option>
       العربية (Arabic)
     </option>
