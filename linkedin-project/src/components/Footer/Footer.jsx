@@ -114,7 +114,7 @@ function Footer() {
          {/* -----------Col with the text links ends here---------------- */}
 
          {/* ---------------Second Col with "questions" and "manage accout and privacy"------------------- */}
-    <Col md={4}>
+    <Col>
             <ul className={classes.secondUl}>
                 <li>
                   <li-icon aria-hidden="true" type="question-pebble-icon" active="true" className="global-footer__action-icon" color="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" className="mercado-match" width="24" height="24" focusable="false">
@@ -152,13 +152,12 @@ function Footer() {
          {/* ---------------Second Col with "questions" and "manage accout and privacy" ends here------------------- */}
 
          {/* -----------language drop box here------------------- */}
-    <div className="grid__col
-                grid__col--12">
+    <div className={classes.ThirdCol}>
               <label for="language">
                 Select Language
               </label>
 
-              <select id="language">
+              <select className={classes.LanguageSelect} id="language">
     <option>
       العربية (Arabic)
     </option>
