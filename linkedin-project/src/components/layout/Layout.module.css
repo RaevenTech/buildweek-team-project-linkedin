@@ -1,9 +1,12 @@
 .main{
-    border: solid rgba(154, 154, 154, 0);
+    border: solid blue;
 }
 .hero{
-    border: solid rgba(86, 86, 86, 0);
+    border: solid red;
 }
 .sidebar{
-    border-radius: solid rgba(158, 158, 158, 0);
+    border-radius: solid green;
+}
+.openBtn {
+    border-radius: 20px;
 }
