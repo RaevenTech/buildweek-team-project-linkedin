@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Card, Row, Col, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import classes from "./SideElementUno.module.css";
 import { AiFillQuestionCircle } from "react-icons/ai";
 

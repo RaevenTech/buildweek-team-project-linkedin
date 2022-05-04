@@ -1,0 +1,12 @@
+.CardDuo {
+    border-radius: 1.25rem;
+    border: 2px;
+    border-color: rgb(126, 125, 125);
+}
+h6 {
+    padding: 15px; ;
+    margin: 0;
+}
+.forList {
+    padding-left: 8px;
+}
