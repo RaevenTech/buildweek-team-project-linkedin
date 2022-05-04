@@ -1,0 +1,14 @@
+.Thumbnail {
+    padding: 0;
+    margin: 0;
+    width: 90px;
+    height: 50px
+}
+.VideoDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.VideoTitle {
+    font: 400 15px/1.57 "Open Sans",sans-serif;
+    padding: 5px;
+}

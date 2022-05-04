@@ -1,0 +1,17 @@
+.learningHeader{
+    padding: 8px;
+    display: flex;
+    display: inline-block;
+}
+.muted {
+    color: #828282;
+    font: 200 15px/1.57 "Open Sans",sans-serif;
+    padding-bottom: 2px;
+    margin-bottom: 0;
+}
+.forList {
+    padding-left: 8px;
+}
+.line {
+    margin-top: 2px;
+}

@@ -8,11 +8,13 @@ function PeopleKnow() {
     return (
              <div className={classes.DisplayPerson}>
                  <div className={classes.Formatting}> 
+                 <span>
 <img className={classes.ProfileImage} src="https://via.placeholder.com/50"/>
-<span>
+</span>
+<div>
 <h5>Name Goes Here</h5>
 <p>occupation goes here</p>
-</span>
+</div>
              </div>
              <div>
             <Button className={classes.button3}>
