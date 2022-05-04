@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import MyProfile from "../hero/MyProfile";
 import classes from "./Layout.module.css";
 import Header from "../navbar/Header";
+import Footer from "../Footer/Footer";
 
 export default function Layout() {
     return (
@@ -23,6 +24,7 @@ export default function Layout() {
                     </Row>
                 </Row>
             </Container>
+            <Footer />
         </>
     );
 }

@@ -1,21 +1,16 @@
-//import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Layout from "./components/layout/Layout";
-import Footer from "./components/footer/Footer";
+
+import EditProfileForm from "./components/hero/EditProfileForm";
 
 function App() {
     return (
         <>
-            {/*
-            <Routes
-                <Route path="/" element={< />} />
-                <Route path="/" element={< />} />
-                <Route path="/" element={< />} />
-            <Route path="*" element={<h3>"Path not found"</h3>} /
-            </Routes>*/}
-
-            <Layout />
-            <Footer />
+            <Routes>
+                <Route path="/" element={<Layout />} />
+                <Route path="/edit-info" element={<EditProfileForm />} />
+            </Routes>
         </>
     );
 }
