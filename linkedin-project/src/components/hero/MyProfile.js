@@ -22,7 +22,7 @@ export default function MyProfile() {
                     </span>
                 </p>
                 <p>
-                    <a href="#">3 Connections </a>
+                    <a href="#">3 connections </a>
                 </p>
                 <p>
                     <ProfileButtons />
