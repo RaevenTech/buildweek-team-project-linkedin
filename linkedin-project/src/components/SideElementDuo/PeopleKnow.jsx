@@ -17,7 +17,7 @@ function PeopleKnow() {
 </span>
 </div>
              </div>
-             <div>
+             <div className={classes.ButtonHolder}>
             <Button className={classes.button3}>
           Connect
             </Button>

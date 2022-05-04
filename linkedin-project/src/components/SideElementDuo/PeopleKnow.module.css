@@ -19,6 +19,9 @@
     border-radius: 50%;
     margin-right: 10px;
 }
+.ButtonHolder{
+    padding-left: 40px;
+}
 .button3 {
     background-color: #f1f1f1;
     border: 1px gray solid;
