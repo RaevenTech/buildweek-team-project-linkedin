@@ -3,6 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import MyProfile from "../hero/MyProfile";
 import classes from "./Layout.module.css";
 
+import Header from "../navbar/Header";
+import Footer from "../Footer/Footer";
+
+
+
 export default function Layout() {
     return (
         <Container>
@@ -18,7 +23,12 @@ export default function Layout() {
                         <h3> cards</h3>
                     </Col>
                 </Row>
-            </Row>
-        </Container>
+
+            </Container>
+            <Footer />
+        </>
+
+      
+
     );
 }
