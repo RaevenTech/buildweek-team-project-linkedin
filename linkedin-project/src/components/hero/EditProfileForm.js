@@ -1,5 +1,6 @@
 import React from "react";
 import { useRef } from "react";
+import { Container } from "react-bootstrap";
 import classes from "./EditProfileForm.module.css";
 
 export default function EditProfileForm(props) {
@@ -9,10 +10,9 @@ export default function EditProfileForm(props) {
     const areaInputRef = useRef();
     const titleInputRef = useRef();
     const bioInputRef = useRef();
+    console.log(props);
 
-    function submitHandler(e) {
-        e.preventDefault();
-
+    function submitHandler() {
         const userFormNameInput = firstNameInputRef.current.value;
         const userFormLastNameInput = lastNameInputRef.current.value;
         const userFormEmailInput = emailInputRef.current.value;
@@ -28,18 +28,17 @@ export default function EditProfileForm(props) {
             title: userFormTitleInput,
             bio: userFormBioInput,
         };
+        console.log(inputDataOject);
         props.onSave(inputDataOject);
     }
 
     return (
         <section className={classes.main}>
-            <h3>Edit Info</h3>
-            <hr />
-            <container>
+            <Container>
                 <h6>
                     <small>* indicates required</small>{" "}
                 </h6>
-                <form className={classes.form} onSubmit={submitHandler}>
+                <form className={classes.form}>
                     <div className={classes.control}>
                         <label htmlFor="name">First name*</label>
                         <input
@@ -98,9 +97,9 @@ export default function EditProfileForm(props) {
                     <hr />
                 </form>
                 <div className={classes.actions}>
-                    <button>Save</button>
+                    <button onClick={() => submitHandler()}>Save</button>
                 </div>
-            </container>
+            </Container>
         </section>
     );
 }

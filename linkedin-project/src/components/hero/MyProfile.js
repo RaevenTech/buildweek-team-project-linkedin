@@ -1,14 +1,13 @@
 import React from "react";
 import { MdModeEditOutline } from "react-icons/md";
 import { useState } from "react";
-import { Link, Navigate } from "react-router-dom";
 import { Jumbotron, Button, Modal } from "react-bootstrap";
 import classes from "./MyProfile.module.css";
 import ProfileButtons from "./ProfileButtons";
 import EditProfileForm from "./EditProfileForm";
 
 export default function MyProfile() {
-    const [show, setShow] = useState(false);
+    const [isShow, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
@@ -22,7 +21,7 @@ export default function MyProfile() {
                 "Content-Type": "application/json",
             },
         }).then(() => {
-            Navigate("/");
+            handleShow();
         });
     }
 
@@ -30,9 +29,7 @@ export default function MyProfile() {
         <div>
             <Jumbotron className={classes.hero}>
                 <div>
-                    <Link to="/edit-info" onClick={handleShow}>
-                        <MdModeEditOutline />
-                    </Link>
+                    <MdModeEditOutline onClick={handleShow} />
                 </div>
 
                 <img
@@ -52,9 +49,9 @@ export default function MyProfile() {
                 <p>
                     <ProfileButtons />
                 </p>
-                <Modal show={show} onHide={handleClose}>
+                <Modal show={isShow} onHide={handleClose}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Modal heading</Modal.Title>
+                        <Modal.Title>Edit info</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                         <EditProfileForm
@@ -64,9 +61,6 @@ export default function MyProfile() {
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleClose}>
                             Close
-                        </Button>
-                        <Button variant="primary" onClick={handleClose}>
-                            Save Changes
                         </Button>
                     </Modal.Footer>
                 </Modal>
