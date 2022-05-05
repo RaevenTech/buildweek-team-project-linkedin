@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Layout from "./components/layout/Layout";
 import EditProfileForm from "./components/hero/EditProfileForm";
-
 import classes from "./App.module.css";
 import NewsFeedLayout from "./components/newsFeed/NewsFeedLayout";
 
