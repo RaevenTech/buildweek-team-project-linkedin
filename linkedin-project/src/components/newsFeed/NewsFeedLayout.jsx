@@ -10,7 +10,9 @@ import Learning from "../Learning/Learning";
 import Card1 from "../BottomCards/Card1";
 import Card2 from "../BottomCards/Card2";
 
-export default function Layout() {
+
+
+export default function NewsFeedLayout() {
     return (
         <>
             <Header />

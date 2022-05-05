@@ -21,7 +21,7 @@ function Footer() {
       <Container>
           <Row md={12}>
               {/* -----------Col with the text links---------------- */}
-    <Col md={2}>  
+    <div>  
     <div><ul className={classes.list}>
               <li className={classes.listItem}>
                   <a className={classes.links}  href="https://about.linkedin.com">
@@ -110,7 +110,7 @@ function Footer() {
               </li>
           </ul>
           </div>
-        </Col>
+        </div>
          {/* -----------Col with the text links ends here---------------- */}
 
          {/* ---------------Second Col with "questions" and "manage accout and privacy"------------------- */}
