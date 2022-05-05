@@ -21,6 +21,7 @@
 .LinkText:hover{
     color: rgb(53, 174, 255);
     text-decoration: underline;
+    cursor: pointer;
 }
 .Pluss{
     padding-right: 8px;
