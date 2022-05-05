@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Row, Col } from "react-bootstrap";
 import {RiUserAddFill} from "react-icons/ri";
 import {BsSquareFill} from "react-icons/bs";
 import {BsFillBookmarkFill} from "react-icons/bs";
@@ -19,20 +19,24 @@ function SmolProfile() {
 <img className={classes.ProfileImage} src="https://via.placeholder.com/80" alt={"..."}/>
 <div className={classes.Centerr}>
 <h5>Name goes here</h5>
-<p>occupation goes here</p>
+<p className={classes.MutedText2}>occupation goes here</p>
 </div>
 </div>
 <hr className={classes.liine} />
 <div>
-<div className={classes.InlineElem}>
-<h6>Connections</h6>
-<h5>Grow your Network</h5>
-</div>
-<span><RiUserAddFill /></span>
+<Row>
+    <Col md={9}>
+<h6 className={classes.MutedText} >Connections</h6>
+<h6 className={classes.InlineText} >Grow your Network</h6>
+</Col>
+<Col md={3}>
+<RiUserAddFill />
+</Col>
+</Row>
 </div>
 <hr className={classes.liine} />
 <div>
-<p>Access exclusive tools and insights</p>
+<p className={classes.MutedText}>Access exclusive tools and insights</p>
 <span> <BsSquareFill />Try Premium for free </span> 
 </div>
 <hr className={classes.liine} />
