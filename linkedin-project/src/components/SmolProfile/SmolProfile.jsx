@@ -23,25 +23,27 @@ function SmolProfile() {
 </div>
 </div>
 <hr className={classes.liine} />
-<div>
+<div className={classes.DivPadding}>
 <Row>
     <Col md={9}>
 <h6 className={classes.MutedText} >Connections</h6>
 <h6 className={classes.InlineText} >Grow your Network</h6>
 </Col>
-<Col md={3}>
+<Col className={classes.PutIconMid} md={3}>
 <RiUserAddFill />
 </Col>
 </Row>
 </div>
 <hr className={classes.liine} />
-<div>
+<div className={classes.DivPadding}>
 <p className={classes.MutedText}>Access exclusive tools and insights</p>
 <span> <BsSquareFill />Try Premium for free </span> 
 </div>
 <hr className={classes.liine} />
+<div className={classes.DivPadding}>
 <span>
 <BsFillBookmarkFill />  My items </span>
+</div>
 </Card>
 )
 }

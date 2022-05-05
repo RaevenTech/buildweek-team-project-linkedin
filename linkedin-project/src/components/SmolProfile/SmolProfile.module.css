@@ -7,13 +7,23 @@
 overflow: hidden;
 }
 .ProfileImage{
+    border: 2px solid white;
     border-radius: 50%;
    display: flex;
-   justify-content: center;
-margin: 0%;
+position: relative;
+bottom: 40px;
+margin: auto;
+}
+.PutIconMid{
+    display: flex;
+    align-items: center;
+}
+.PremiumFormat{
+    padding-left: 10px;
+    padding-top: 0%;
 }
 .liine{
-    padding: 2px;
+    padding: 5px;
     margin: 2px;
 }
 .InlineText{
@@ -30,10 +40,15 @@ margin-bottom: 0%;
     color: grey;
     font-size: small;
     text-align: start;
-    padding-left: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0%;
+    padding-top: 0%;
 }
 .MutedText2{
     color: grey;
     font-size: small;
+}
+.DivPadding{
     padding-left: 10px;
+    padding-bottom: 10px;
 }
