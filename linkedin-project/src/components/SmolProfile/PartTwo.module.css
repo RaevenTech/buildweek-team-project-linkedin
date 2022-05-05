@@ -1,0 +1,36 @@
+.CardEdit{
+    border-radius: 10px;
+}
+.DivPadding{
+    padding-top: 5px;
+    padding-left: 15px;
+}
+.DivPadding2{
+    padding-top: 5px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.LinkText{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0%;
+    color: rgb(53, 174, 255);
+    font: bold 12px/20px Arial, Helvetica, sans-serif;
+}
+.LinkText:hover{
+    color: rgb(53, 174, 255);
+    text-decoration: underline;
+}
+.Pluss{
+    padding-right: 8px;
+    font-size: 22px;
+   position: relative;
+   bottom: 5px;
+}
+.Discover{
+    color: grey;
+    text-align: center;
+    font-size: medium;
+    padding-bottom: 5px;
+}
