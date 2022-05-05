@@ -29,19 +29,11 @@ export default function MyProfile() {
                 <h3 className={classes.profileName}>Profile Name</h3>
                 <h5 className={classes.jobTitle}>Profession title</h5>
                 <p>
-
                     Mirandela, Bragança, Portugal -
                     <span>"(link-Contact info)"</span>
-
-                    Mirandela, Bragança, Portugal -{" "}
-                    <span>
-                        <a href="#">Contact info</a>
-                    </span>
+                    Mirandela, Bragança, Portugal - <span>Contact info</span>
                 </p>
-                <p>
-                    <a href="#">3 connections </a>
-
-                </p>
+                <p>3 connections</p>
                 <p>"(link-3 Connections)"</p>
                 <p>
                     <ProfileButtons />

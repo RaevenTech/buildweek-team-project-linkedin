@@ -9,7 +9,7 @@ function PeopleKnow() {
              <div className={classes.DisplayPerson}>
                  <div className={classes.Formatting}> 
                  <div className={classes.DivTwo}>
-<img className={classes.ProfileImage} src="https://via.placeholder.com/50"/>
+<img className={classes.ProfileImage} src="https://via.placeholder.com/50" alt={"..."}/>
 
 <span>
 <h5>Name Goes Here</h5>

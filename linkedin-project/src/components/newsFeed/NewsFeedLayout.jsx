@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import MyProfile from "../hero/MyProfile";
-import classes from "./Layout.module.css";
+import classes from "./NewsFeedLayout.module.css";
 import SideElementUno from "../SideElementUno/SideElementUno";
 import SideElementDuo from "../SideElementDuo/SideElementDuo";
 import Header from "../navbar/Header";
@@ -10,11 +10,14 @@ import Learning from "../Learning/Learning";
 import Card1 from "../BottomCards/Card1";
 import Card2 from "../BottomCards/Card2";
 
-export default function Layout() {
+
+
+export default function NewsFeedLayout() {
     return (
         <>
             <Header />
             <Container>
+                <h1> THIS IS NEWS FEED!</h1>
                 <Row className={classes.main}>
                     <Col md={9} className={classes.hero}>
                         <MyProfile />
