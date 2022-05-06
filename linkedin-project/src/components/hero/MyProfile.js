@@ -1,24 +1,35 @@
 import React from "react";
 import { MdModeEditOutline } from "react-icons/md";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { Jumbotron, Button, Modal } from "react-bootstrap";
 import classes from "./MyProfile.module.css";
 import ProfileButtons from "./ProfileButtons";
 import EditProfileForm from "./EditProfileForm";
 
 export default function MyProfile() {
-    const [show, setShow] = useState(false);
+    const [isShow, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    function addEditInfoFromObjectDataHandler(inputDataOject) {
+        fetch("https://striveschool-api.herokuapp.com/api/profile/", {
+            method: "POST",
+            body: JSON.stringify(inputDataOject),
+            headers: {
+                authorization:
+                    "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjZmYWI2ZjE3YzRlMDAwMTVkN2EwODEiLCJpYXQiOjE2NTE0ODU1NTIsImV4cCI6MTY1MjY5NTE1Mn0.6oiKKnrkIJeweRS_PUJB__l7YKgogrSnme8NbyUpz4Q",
+                "Content-Type": "application/json",
+            },
+        }).then(() => {
+            handleShow();
+        });
+    }
 
     return (
         <div>
             <Jumbotron className={classes.hero}>
                 <div>
-                    <Link to="/edit-info" onClick={handleShow}>
-                        <MdModeEditOutline />
-                    </Link>
+                    <MdModeEditOutline onClick={handleShow} />
                 </div>
 
                 <img
@@ -38,19 +49,18 @@ export default function MyProfile() {
                 <p>
                     <ProfileButtons />
                 </p>
-                <Modal show={show} onHide={handleClose}>
+                <Modal show={isShow} onHide={handleClose}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Modal heading</Modal.Title>
+                        <Modal.Title>Edit info</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <EditProfileForm />
+                        <EditProfileForm
+                            onSave={addEditInfoFromObjectDataHandler}
+                        />
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleClose}>
                             Close
-                        </Button>
-                        <Button variant="primary" onClick={handleClose}>
-                            Save Changes
                         </Button>
                     </Modal.Footer>
                 </Modal>
