@@ -8,6 +8,9 @@ import EditProfileForm from "./EditProfileForm";
 
 export default function MyProfile() {
     const [isShow, setShow] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
+    const [users, setUsers] = useState([]);
+
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
@@ -25,18 +28,34 @@ export default function MyProfile() {
         });
     }
 
-    function getAllProfileDataFromApi() {}
-
-    useEffect(() => {
-        fetch("https://striveschool-api.herokuapp.com/api/profile/")
+    function getAllProfileDataFromApi() {
+        setIsLoading(true);
+        fetch("https://striveschool-api.herokuapp.com/api/profile/", {
+            headers: {
+                authorization:
+                    "Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjZmYWI2ZjE3YzRlMDAwMTVkN2EwODEiLCJpYXQiOjE2NTE0ODU1NTIsImV4cCI6MTY1MjY5NTE1Mn0.6oiKKnrkIJeweRS_PUJB__l7YKgogrSnme8NbyUpz4Q",
+            },
+        })
             .then((response) => {
                 return response.json();
             })
             .then((data) => {
-                console.log((data.slice = (0, 8)));
-                setIsLoadingprofiles(false);
-                setLoadedProfiles(data);
+                setIsLoading(false);
+                setUsers(data);
+                console.log(data);
             });
+
+        if (isLoading) {
+            return (
+                <section>
+                    <p>Loading...</p>
+                </section>
+            );
+        }
+    }
+
+    useEffect(() => {
+        getAllProfileDataFromApi();
     }, []);
 
     return (
