@@ -1,0 +1,61 @@
+.Post{
+    overflow: hidden;
+    border-radius: 12px;
+}
+.PosterPfp{
+padding: 5px;
+}
+.UserName{
+padding-top: 5px;
+font: 700 14px/1.5 "Roboto", sans-serif;
+color: rgb(86, 86, 86);
+}
+.UserName:hover{
+    padding-top: 5px;
+    font: 700 14px/1.5 "Roboto", sans-serif;
+    color: rgb(64, 153, 255);
+    text-decoration: underline;
+    }
+.Text{
+    padding: 5px;
+    font: 14px/1.5 "Roboto", sans-serif;
+}
+.SeeMore{
+    padding-left: 50px;
+}
+.SeeMore:hover{
+    padding-left: 50px;
+    color: rgb(64, 153, 255);
+    text-decoration: underline;
+}
+    .TheDots{
+        padding-top: o;
+        margin-top: 0%;
+        font: 700 20px/1.5 "Roboto", sans-serif;
+    }
+    .MutedSmol{
+        font: 12px "Roboto", sans-serif;
+        color: rgb(184, 184, 184);
+        margin-bottom: 0%;
+    }
+.DivPad{
+    padding: 5px;
+}
+.LineNoPad{
+    padding: 0px;
+    margin: 0%;
+}
+.ButtonIcons{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(104, 104, 104);
+}
+.ButtonIcons:hover{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: grey;
+    background-color: rgb(242, 242, 242);
+    border-radius: 12px;
+}
