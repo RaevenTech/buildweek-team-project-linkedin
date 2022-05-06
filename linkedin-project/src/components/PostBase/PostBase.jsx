@@ -2,6 +2,11 @@ import React from "react";
 import { FaGlobeAmericas } from "react-icons/fa";
 import { Card, Row, Col } from "react-bootstrap";
 import classes from "./PostBase.module.css";
+import { BsHandThumbsUp } from "react-icons/bs";
+import { MdOutlineComment } from "react-icons/md";
+import { RiShareForwardFill } from "react-icons/ri";
+import { FiSend } from "react-icons/fi";
+
 
 function PostBase() {
     return (
@@ -9,7 +14,7 @@ function PostBase() {
     <div className={classes.DivPad}>
         <Row>
             <Col md={2}>
-            <img className={classes.PosterPfp} src="https://via.placeholder.com/80" alt={"..."}/>
+            <img className={classes.PosterPfp} src="https://via.placeholder.com/60" alt={"..."}/>
             </Col>
             <Col className={classes.DivPad} md={9}>
             <a className={classes.UserName}>Users Name</a>
@@ -45,13 +50,17 @@ function PostBase() {
     <hr className={classes.LineNoPad} />
     <div className={classes.DivPad}>
         <Row>
-        <Col md={3}>
+        <Col className={classes.ButtonIcons} md={3}>
+            <BsHandThumbsUp /> Like
             </Col>
-            <Col md={3}>
+            <Col className={classes.ButtonIcons} md={3}>
+                <MdOutlineComment /> Comment
             </Col>
-            <Col md={3}>
+            <Col className={classes.ButtonIcons} md={3}>
+                <RiShareForwardFill /> Share
             </Col>
-            <Col md={3}>
+            <Col className={classes.ButtonIcons} md={3}>
+                <FiSend /> Send
             </Col>
             </Row>
             </div>
