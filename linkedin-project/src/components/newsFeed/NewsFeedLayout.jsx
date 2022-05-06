@@ -7,6 +7,7 @@ import SmolProfile from "../SmolProfile/SmolProfile";
 import PartTwo from "../SmolProfile/PartTwo";
 import SideElementDuo from "../SideElementDuo/SideElementDuo";
 import Feed from "../newsFeed/Feed";
+import PostBase from "../PostBase/PostBase";
 
 
 
@@ -25,6 +26,7 @@ export default function NewsFeedLayout() {
                     </Col>
                     <Col md={6} className={classes.hero}>
                        <Feed />
+                       <PostBase />
                     </Col>
                     <Col md={3}>
                       <SideElementDuo />                   

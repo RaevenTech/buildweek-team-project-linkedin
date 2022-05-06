@@ -35,7 +35,7 @@ function Feed() {
                     <InputOption
                         Icon={MdOutlineEventNote}
                         title="Event"
-                        color="#C0CBCD"
+                        color="#C8ABCD"
                         
                     />
                     <InputOption

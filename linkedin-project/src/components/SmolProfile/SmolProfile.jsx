@@ -4,6 +4,7 @@ import {RiUserAddFill} from "react-icons/ri";
 import {BsSquareFill} from "react-icons/bs";
 import {BsFillBookmarkFill} from "react-icons/bs";
 import classes from "./SmolProfile.module.css";
+import {Link} from "react-router-dom";
 
 function SmolProfile() {
     return(
@@ -16,7 +17,7 @@ function SmolProfile() {
   <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
 </svg>
 </div>
-<img className={classes.ProfileImage} src="https://via.placeholder.com/80" alt={"..."}/>
+<Link to={"/"}><img className={classes.ProfileImage} src="https://via.placeholder.com/80" alt={"..."}/></Link>
 <div className={classes.Centerr}>
 <h5>Name goes here</h5>
 <p className={classes.MutedText2}>occupation goes here</p>

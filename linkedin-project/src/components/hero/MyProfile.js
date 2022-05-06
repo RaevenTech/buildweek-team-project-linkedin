@@ -48,7 +48,7 @@ export default function MyProfile() {
         if (isLoading) {
             return (
                 <section>
-                    <p>Loading...</p>
+                    <p> Loading...</p>
                 </section>
             );
         }
@@ -56,6 +56,7 @@ export default function MyProfile() {
 
     useEffect(() => {
         getAllProfileDataFromApi();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
