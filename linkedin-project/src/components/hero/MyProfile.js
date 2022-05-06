@@ -1,6 +1,6 @@
 import React from "react";
 import { MdModeEditOutline } from "react-icons/md";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Jumbotron, Button, Modal } from "react-bootstrap";
 import classes from "./MyProfile.module.css";
 import ProfileButtons from "./ProfileButtons";
@@ -25,9 +25,40 @@ export default function MyProfile() {
         });
     }
 
+    function getAllProfileDataFromApi() {}
+
+    useEffect(() => {
+        fetch("https://striveschool-api.herokuapp.com/api/profile/")
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                console.log((data.slice = (0, 8)));
+                setIsLoadingprofiles(false);
+                setLoadedProfiles(data);
+            });
+    }, []);
+
     return (
         <div>
             <Jumbotron className={classes.hero}>
+                {/*<div>
+                    <svg
+                        className={classes.ProfileBackImage}
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 552 138"
+                        id="person-default"
+                        data-supported-dps="2048x512"
+                    >
+                        <path fill="none" d="M0 0h552v138H0z" />
+                        <path fill="#d9e5e7" d="M0 0h552v138H0z" />
+                        <path fill="#bfd3d6" d="M380 0h172v138H380z" />
+                        <path
+                            d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z"
+                            fill="#a0b4b7"
+                        />
+                    </svg>
+                </div>*/}
                 <div>
                     <MdModeEditOutline onClick={handleShow} />
                 </div>
