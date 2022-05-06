@@ -27,9 +27,9 @@ function PostBase() {
          </Row>
     </div>
     <div className={classes.DivPad}>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+        <p className={classes.Text}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
             ut labore et dolore magna aliqua. Ut veniam,
-             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span className={classes.SeeMore}>...see more</span> </p>
     </div>
     <div>
     <img className={classes.postsImage} src="https://via.placeholder.com/600" alt={"..."}/>

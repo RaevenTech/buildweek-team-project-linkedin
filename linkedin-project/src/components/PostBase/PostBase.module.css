@@ -16,6 +16,18 @@ color: rgb(86, 86, 86);
     color: rgb(64, 153, 255);
     text-decoration: underline;
     }
+.Text{
+    padding: 5px;
+    font: 14px/1.5 "Roboto", sans-serif;
+}
+.SeeMore{
+    padding-left: 50px;
+}
+.SeeMore:hover{
+    padding-left: 50px;
+    color: rgb(64, 153, 255);
+    text-decoration: underline;
+}
     .TheDots{
         padding-top: o;
         margin-top: 0%;
@@ -45,4 +57,5 @@ color: rgb(86, 86, 86);
     padding-bottom: 10px;
     color: grey;
     background-color: rgb(242, 242, 242);
+    border-radius: 12px;
 }
