@@ -7,20 +7,20 @@ function PartTwo() {
         <Card className={classes.CardEdit}>
         <div>
         <div className={classes.DivPadding}>
-        <selection>
+        <a>
         <p className={classes.LinkText}>Groups</p>
-        </selection>
+        </a>
         </div>
         <div className={classes.DivPadding2}>
-        <selection>
+        <a>
         <p className={classes.LinkText}>Events</p>
-        </selection>
+        </a>
         <span className={classes.Pluss}>+</span>
         </div>
         <div className={classes.DivPadding}>
-        <selection>
+        <a>
         <p className={classes.LinkText}>Followed Hashtags</p>
-        </selection>
+        </a>
         </div>
         </div>
         <hr />
