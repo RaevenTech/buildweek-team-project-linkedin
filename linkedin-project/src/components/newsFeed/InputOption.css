@@ -17,4 +17,7 @@
 .inputOption > h4 {
     margin-left: 5px;
     
+}.inputIcon {
+    width: 1.5em;
+    height: 1.5em;
 }
