@@ -12,25 +12,22 @@ import Feed from "../newsFeed/Feed";
 
 
 
+
 export default function NewsFeedLayout() {
     return (
         <>
             <Header />
-            <Container>
-                
+            <Container>  
                 <Row className={classes.main}>
-                <Col md={3}>
-                        <p>side col</p>
+                <Col md={3}>           
                         <SmolProfile />
                         <PartTwo />
                     </Col>
                     <Col md={6} className={classes.hero}>
-                       
+                       <Feed />
                     </Col>
                     <Col md={3}>
-                      <p>side col</p>
-                      <SideElementDuo />
-                      
+                      <SideElementDuo />                   
                     </Col>
                     <Row>
                         <Col xs={3} className={classes.sidebar}></Col>

@@ -12,33 +12,39 @@ function Feed() {
         <div className="feed">
             <div className="feed_inputContainer">
                 <div className="feed_input">
-                    <RiPencilFill />
+                    
                     <form>
+                        <RiPencilFill />
                         <input type="text"></input>
                         <button type="submit"> Send</button>
                     </form>
-                </div>
+               
                 <div className="feed_inputOptions">
                     <InputOption
                         Icon={HiPhotograph}
                         title="Photo"
+                        color="#70B5F9"
                        
                     />
                     <InputOption
                         Icon={FaFileVideo}
                         title="Video"
+                        color="#E7A33E" 
                        
                     />
                     <InputOption
                         Icon={MdOutlineEventNote}
                         title="Event"
+                        color="#C0CBCD"
                         
                     />
                     <InputOption
                         Icon={GrArticle}
                         title="Write article"
+                        color="#7FC15E"
                         
-                    />
+                    /> 
+                    </div>
                 </div>
             </div>
         </div>

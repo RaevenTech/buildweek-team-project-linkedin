@@ -5,7 +5,7 @@
     color: gray;
     padding: 10px;
     cursor: pointer;
-
+    flex-direction: column;
 }
 
 .inputOption:hover {

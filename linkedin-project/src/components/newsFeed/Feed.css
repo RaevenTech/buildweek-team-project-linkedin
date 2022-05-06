@@ -5,30 +5,33 @@
 }
 
 .feed_input {
+   
     background-color: lightgray;
     padding: 10px;
     padding-bottom: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+    
 
 }
 
-.feed_input > form {
+.feed_input form {
    display: flex;
    width: 100%;
 
 }
 
-.feed_input > form > input {
+.feed_input form input {
     border: none;
     flex: 1;
     margin-left: 10px;
     outline-width: 0;
     font-weight: 600;
-
+    border-radius: 30px;
+    line-height: 1.5em;
 }
 
-.feed_input > form > button {
+.feed_input form button {
     display: none;
 
 }
