@@ -8,6 +8,8 @@ import EditProfileForm from "./EditProfileForm";
 
 export default function MyProfile() {
     const [isShow, setShow] = useState(false);
+    const [isLoading, setIsLoading] = useSetstate([]);
+
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
@@ -25,18 +27,27 @@ export default function MyProfile() {
         });
     }
 
-    function getAllProfileDataFromApi() {}
-
-    useEffect(() => {
+    function getAllProfileDataFromApi() {
         fetch("https://striveschool-api.herokuapp.com/api/profile/")
             .then((response) => {
                 return response.json();
             })
             .then((data) => {
-                console.log((data.slice = (0, 8)));
-                setIsLoadingprofiles(false);
+                setIsLoading(false);
                 setLoadedProfiles(data);
             });
+
+        if (isLoading) {
+            return (
+                <section>
+                    <h4>Loaading...</h4>
+                </section>
+            );
+        }
+    }
+
+    useEffect(() => {
+        getAllProfileDataFromApi();
     }, []);
 
     return (
