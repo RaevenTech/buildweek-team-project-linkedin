@@ -1,14 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import MyProfile from "../hero/MyProfile";
 import classes from "./NewsFeedLayout.module.css";
-import SideElementUno from "../SideElementUno/SideElementUno";
-import SideElementDuo from "../SideElementDuo/SideElementDuo";
 import Header from "../navbar/Header";
 import Footer from "../Footer/Footer";
-import Learning from "../Learning/Learning";
-import Card1 from "../BottomCards/Card1";
-import Card2 from "../BottomCards/Card2";
+import SmolProfile from "../SmolProfile/SmolProfile";
+import PartTwo from "../SmolProfile/PartTwo";
+import SideElementDuo from "../SideElementDuo/SideElementDuo";
+import Feed from "../newsFeed/Feed";
+
+
 
 
 
@@ -17,17 +17,20 @@ export default function NewsFeedLayout() {
         <>
             <Header />
             <Container>
-                <h1> THIS IS NEWS FEED!</h1>
+                
                 <Row className={classes.main}>
-                    <Col md={9} className={classes.hero}>
-                        <MyProfile />
-                        <Card1 />
-                        <Card2 />
+                <Col md={3}>
+                        <p>side col</p>
+                        <SmolProfile />
+                        <PartTwo />
+                    </Col>
+                    <Col md={6} className={classes.hero}>
+                       
                     </Col>
                     <Col md={3}>
-                        <SideElementUno />
-                        <SideElementDuo />
-                        <Learning />
+                      <p>side col</p>
+                      <SideElementDuo />
+                      
                     </Col>
                     <Row>
                         <Col xs={3} className={classes.sidebar}></Col>
