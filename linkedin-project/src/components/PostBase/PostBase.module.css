@@ -1,3 +1,33 @@
 .Post{
     overflow: hidden;
 }
+.PosterPfp{
+padding: 5px;
+}
+.UserName{
+padding-top: 5px;
+font: 700 14px/1.5 "Roboto", sans-serif;
+color: rgb(86, 86, 86);
+}
+.TheDots{
+    padding-top: o;
+    margin-top: 0%;
+    font: 700 20px/1.5 "Roboto", sans-serif;
+}
+.UserName:hover{
+    padding-top: 5px;
+    font: 700 14px/1.5 "Roboto", sans-serif;
+    color: rgb(64, 153, 255);
+    text-decoration: underline;
+    }
+    .MutedSmol{
+        font: 12px "Roboto", sans-serif;
+        color: rgb(184, 184, 184)
+    }
+.DivPad{
+    padding: 5px;
+}
+.LineNoPad{
+    padding: 0px;
+    margin: 0%;
+}
