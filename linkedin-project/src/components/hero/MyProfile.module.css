@@ -19,3 +19,8 @@ margin-top: 20px;
 #root > div > div > div.Layout_hero__K9zZR.col-md-9{
     padding-left: 5px;
 }
+.ProfileBackImage {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+overflow: hidden;
+}

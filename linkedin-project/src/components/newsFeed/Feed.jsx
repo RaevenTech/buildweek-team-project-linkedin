@@ -22,21 +22,25 @@ function Feed() {
                     <InputOption
                         Icon={HiPhotograph}
                         title="Photo"
+                        color="#70B5F9"
                        
                     />
                     <InputOption
                         Icon={FaFileVideo}
                         title="Video"
+                        color="#E7A33E" 
                        
                     />
                     <InputOption
                         Icon={MdOutlineEventNote}
                         title="Event"
+                        color="#C0CBCD"
                         
                     />
                     <InputOption
                         Icon={GrArticle}
                         title="Write article"
+                        color="#7FC15E"
                         
                     />
                 </div>
