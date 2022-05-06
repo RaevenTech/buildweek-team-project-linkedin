@@ -1,0 +1,54 @@
+.CardEdit{
+    border-radius: 10px;
+}
+.ProfileBackImage {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+overflow: hidden;
+}
+.ProfileImage{
+    border: 2px solid white;
+    border-radius: 50%;
+   display: flex;
+position: relative;
+bottom: 40px;
+margin: auto;
+}
+.PutIconMid{
+    display: flex;
+    align-items: center;
+}
+.PremiumFormat{
+    padding-left: 10px;
+    padding-top: 0%;
+}
+.liine{
+    padding: 5px;
+    margin: 2px;
+}
+.InlineText{
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 10px;
+}
+.Centerr{
+text-align: center;
+padding-bottom: 0%;
+margin-bottom: 0%;
+}
+.MutedText{
+    color: grey;
+    font-size: small;
+    text-align: start;
+    margin-bottom: 0;
+    padding-bottom: 0%;
+    padding-top: 0%;
+}
+.MutedText2{
+    color: grey;
+    font-size: small;
+}
+.DivPadding{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
